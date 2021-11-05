@@ -1,0 +1,41 @@
+.contenedor {
+	background: #a4c5c6;
+	/*----------INICIO DISPLAY GRID--------------------*/
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		"header header header"
+		"body body sidebar"
+		"footer footer footer";
+	/*----------FINAL DISPLAY GRID--------------------*/
+}
+.header {
+	background: #ffeb99;
+	/*----------INICIO DISPLAY GRID--------------------*/
+	grid-area: header;
+	/*----------FINAL DISPLAY GRID--------------------*/
+}
+.body {
+	background: #856c8b;
+	/*----------INICIO DISPLAY GRID--------------------*/
+	grid-area: body;
+	/*----------FINAL DISPLAY GRID--------------------*/
+}
+.sidebar {
+	background: #d4ebd0;
+	/*----------INICIO DISPLAY GRID--------------------*/
+	grid-area: sidebar;
+	/*----------FINAL DISPLAY GRID--------------------*/
+}
+.footer {
+	background: #ffdada;
+	/*----------INICIO DISPLAY GRID--------------------*/
+	grid-area: footer;
+	/*----------FINAL DISPLAY GRID--------------------*/
+}
+
+/*-----------------------SUB-BODY------------------------*/
+.ejemplo {
+    background: #fbceb5;
+}

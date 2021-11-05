@@ -1,0 +1,133 @@
+/*-------------Inicio de la GRID-------------------*/
+body {
+	background: #181818;
+	color: white;
+}
+.container {
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+		"header header header"
+		"body body sidebar"
+		"footer footer footer";
+
+	border: 10px solid #1b1b1b;
+	border-radius: 15px;
+}
+.header {
+	grid-column-start: header;
+	grid-column-end: header;
+}
+.header p {
+	font-size: 1.271rem;
+}
+.body {
+	grid-column-start: body;
+	grid-column-end: body;
+	height: 700px;
+}
+.body_grid {
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: repeat(3, 1fr);
+}
+.sidebar {
+	background: url("./Source/Images/discord.jpg");
+	background-repeat: no-repeat;
+	background-position: 50%;
+	grid-column-start: sidebar;
+	grid-column-end: sidebar;
+	border-radius: 15px;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.footer {
+	grid-column-start: footer;
+	grid-column-end: footer;
+}
+/*--------------Final de la GRID-----------------------*/
+/*
+*		Todos los estilos apartir de aqui estan siendo creados en cascada.
+*/
+.banner {
+	max-width: 235px;
+}
+.header h1 {
+	text-align: center;
+}
+.header p {
+	text-align: center;
+}
+.image_cursos {
+	height: 150px;
+	width: 140px;
+}
+.image_cursos_dos {
+	height: 150px;
+	width: 110px;
+}
+.grid_item {
+	background: #131313;
+	box-shadow: 2px 2px 18px rgba(105, 94, 94, 0.25);
+	border-radius: 13px;
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+}
+
+.grid_item:hover {
+	background: #302f2f;
+	box-shadow: 2px 2px 18px;
+}
+.grid_item a {
+	font-size: 20px;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-shadow: 1.1px 0.1px rgb(255 255 255);
+}
+.grid_item a:hover {
+	text-shadow: 2px 2px 2px black;
+}
+
+/*---------------------Inicio del RESPONSIVE-------------------*/
+/*
+*		El responsive esta adaptado solamente a 2 resoluciones, para agregar mas, usar: grid-template-areas sobre el .container
+*		para evitar problemas de compatibilidad.
+*/
+
+@media screen and (max-width: 1000px) {
+	.container {
+		grid-template-areas:
+			"header header header"
+			"body body body"
+			"sidebar sidebar sidebar"
+			"footer footer footer";
+		grid-auto-flow: dense;
+	}
+	.body_grid {
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(12, 1fr);
+	}
+}
+@media screen and (max-width: 500px) {
+	.container {
+		grid-template-areas:
+			"header header header"
+			"body body body"
+			"sidebar sidebar sidebar"
+			"footer footer footer";
+		grid-auto-flow: dense;
+	}
+	.body_grid {
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: repeat(1, auto);
+		grid-template-rows: repeat(12, 1fr);
+	}
+}

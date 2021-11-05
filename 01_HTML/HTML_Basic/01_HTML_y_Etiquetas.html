@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="./src/Style/style.css"
+		/>
+		<title>Cursos</title>
+	</head>
+	<body>
+		<!--Algunas etiquetas tienen una segunda clase "general" es para un estilo en especifico, (puede ser eliminada mas adelante.) -->
+		<div class="container">
+			<div class="header general">
+				<h1>
+					Parte 1 del curso sobre Desarrollo Web
+				</h1>
+			</div>
+			<div class="body general">
+				<div class="subBody general">
+					<h3>
+						Descubriendo las etiquetas de HTML.
+					</h3>
+					<h5>
+						Creando paginas web usando etiquetas
+						HTML.
+					</h5>
+					<p>
+						HTML es el lenguaje de computadora
+						que tienen todas las estructuras de
+						las paginas web en internet.
+						<br />
+						El codigo de HTML le dice a los
+						navegadores como mostrar el
+						contenido como son imagenes, links,
+						y texto en las paguinas web.
+					</p>
+				</div>
+				<!--Esta parte engloba toda la grid de pregustas y sus respuestas-->
+				<div class="bodyContainer general">
+					<!--La etiqueta "curso_container" esta unicamente como guia para maquetado. (puede ser eliminado mas adelante) -->
+					<div class="curso_container">
+						<form
+							name="quizForm"
+							onsubmit="return verificarRespuestas()"
+							action=""
+						>
+							<div class="quizBody">
+								<!----------------------------------------------------------------PREGUNTA_01----------------------------------->
+								<h3 class="grid_texto">
+									Cual es la estructura de
+									lenguaje que usan las
+									paginas web en internet
+								</h3>
+								<div class="quizContainer">
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+									<div class="grid_item">
+										<img
+											class="
+												image
+												image_pregunta_1
+												quiz-pregunta
+											"
+											src="../../Source/Images/html.png"
+											alt="Definicion de la etiqueta button"
+											srcset=""
+										/>
+										<input
+											type="radio"
+											name="p1"
+											value="a"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+									<div class="grid_item">
+										<img
+											class="
+												image
+												image_pregunta_1
+											"
+											src="../../Source/Images/javascript.png"
+											alt=""
+											srcset=""
+										/>
+										<input
+											type="radio"
+											name="p1"
+											value="b"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+									<div class="grid_item">
+										<img
+											class="
+												image
+												image_pregunta_1
+											"
+											src="../../Source/Images/css-logo-black-and-white.png"
+											alt=""
+											srcset=""
+										/>
+										<input
+											type="radio"
+											name="p1"
+											value="c"
+										/>
+									</div>
+								</div>
+								<!----------------------------------------------------------------PREGUNTA_02----------------------------------->
+								<h3>
+									Cual es la etiqueta
+									utilizada para crear un
+									boton
+								</h3>
+								<div class="quizContainer">
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>pre</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>pre</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p2"
+											value="a"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>button</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>button</span
+											>
+											&gt;
+										</div>
+										<input
+											type="radio"
+											name="p2"
+											value="b"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>option</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>option</span
+											>
+											&gt;
+										</div>
+
+										<input
+											type="radio"
+											name="p2"
+											value="c"
+										/>
+									</div>
+								</div>
+								<!----------------------------------------------------------------PREGUNTA_03----------------------------------->
+								<h3>
+									Que crees que mostrara
+									este codigo
+									<span class="etiqueta">
+										&lt;button&gt;
+									</span>
+									Enviar
+									<span class="etiqueta">
+										&lt;/button&gt;
+									</span>
+								</h3>
+								<div class="quizContainer">
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												pregunta_3
+											"
+										>
+											<button
+												class="
+													button-pregunta
+												"
+												disabled
+											>
+												Enviar
+											</button>
+										</div>
+										<input
+											type="radio"
+											name="p3"
+											value="a"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div>
+											<input
+												class="
+													pregunta_3
+												"
+												type="color"
+												name=""
+												id=""
+											/>
+										</div>
+										<input
+											type="radio"
+											name="p3"
+											value="b"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div>
+											<input
+												class="
+													pregunta_3
+												"
+												type="checkbox"
+												name=""
+												id=""
+											/>
+										</div>
+										<input
+											type="radio"
+											name="p3"
+											value="c"
+										/>
+									</div>
+								</div>
+								<!----------------------------------------------------------------PREGUNTA_04----------------------------------->
+								<h3>
+									Cual de estas etiquetas
+									creara un parrafo.
+								</h3>
+								<div class="quizContainer">
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>pre</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>pre</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p4"
+											value="a"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>img</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>img</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p4"
+											value="b"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>p</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>p</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p4"
+											value="c"
+										/>
+									</div>
+								</div>
+								<!----------------------------------------------------------------PREGUNTA_05----------------------------------->
+								<h3>
+									Cual de estas etiquetas
+									creara un Heading.
+								</h3>
+								<div class="quizContainer">
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>video</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>video</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p5"
+											value="a"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>button</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>button</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p5"
+											value="b"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>h1</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>h1</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p5"
+											value="c"
+										/>
+									</div>
+								</div>
+								<!----------------------------------------------------------------PREGUNTA_06----------------------------------->
+								<h3>
+									Cual de estas etiquetas
+									es la utilizada para
+									iniciar una pagina web.
+								</h3>
+								<div class="quizContainer">
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>p</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>p</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p6"
+											value="a"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>html</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>html</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p6"
+											value="b"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>script</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>script</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p6"
+											value="c"
+										/>
+									</div>
+								</div>
+								<!----------------------------------------------------------------PREGUNTA_07----------------------------------->
+								<h3>
+									Cual de estas etiquetas
+									define el cuerpo de una
+									pagina
+								</h3>
+								<div class="quizContainer">
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>body</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>body</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p7"
+											value="a"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>html</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>html</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p7"
+											value="b"
+										/>
+									</div>
+									<!----------------------------------------------------------------RESPUESTA-------------------------------------->
+
+									<div class="grid_item">
+										<div
+											class="
+												quiz-pregunta
+											"
+										>
+											&lt;<span
+												class="
+													pregunta-frase
+												"
+												>h1</span
+											>&gt;&lt;/<span
+												class="
+													pregunta-frase
+												"
+												>h1</span
+											>&gt;
+										</div>
+										<input
+											type="radio"
+											name="p7"
+											value="c"
+										/>
+									</div>
+								</div>
+								<!----------------------------------------------------------------PREGUNTA_08----------------------------------->
+							</div>
+							<!--Este inpun se encarga de enviar todas las respuestas al script para ser valoradas.-->
+							<input
+								class="boton"
+								type="submit"
+								value="Obtener resultados!"
+							/>
+						</form>
+					</div>
+					<!--Este es el final de la etiqueta "curso_container"-->
+
+					<div id="resultado">
+						<!--Esta etiqueta esta identificada por JavaScript para ser usada como contenedor de las respuestas.-->
+						<p>
+							Dale click para ver tus
+							resultados!
+						</p>
+					</div>
+				</div>
+				<!--Final de la etiqueta "body_container" donde se encuentra todo lo relacionado con el cuestionario.-->
+			</div>
+			<div class="sidebar general">
+				<!--Etiqueda usada para el lateral derecho de la paguina, donde estara el widget de discord (Pueden ser agragadas mas cosas.)-->
+				<iframe
+					src="https://discordapp.com/widget?id=818251363012182023&theme=dark"
+					width="100%"
+					height="100%"
+					allowtransparency="true"
+					frameborder="0"
+					sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+				></iframe>
+			</div>
+			<div class="footer general">
+				<!--Pues el Footer weee, no mames.-->
+				<h1>Footer</h1>
+				<p>
+					HTML y body son los elementos que
+					conforman la estructura de una pagina
+					web.
+					<br />
+					Mas adelante veremos como agregar mas
+					elementos dentro, pada darle estilo y
+					hacerla mas interactiva
+				</p>
+			</div>
+		</div>
+		<script src="./src/Script/index.js"></script>
+	</body>
+</html>
